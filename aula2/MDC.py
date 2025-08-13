@@ -1,6 +1,3 @@
-''' Crie um programa que leia dois numeros inteiros, e substitua o maior pela diferença e escreva ambos no console.
-      '''
-
 primeiro_numero = input("Digite o primeiro número inteiro: ")
 primeiro_numero = int(primeiro_numero)
 
