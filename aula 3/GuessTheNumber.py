@@ -5,7 +5,7 @@ nome = input("Digite seu nome: ")
 print("Olá,", nome, "! Vamos jogar um jogo de adivinhação.")
 
 
-tentativa = input("Advinhe o número entre 1 e 10: ")
+tentativa = input("Advinhe o número inteiro entre 1 e 10: ")
 tentativa = int(tentativa)
 
 numerotentativa = 1
@@ -16,7 +16,7 @@ while tentativa != numero:
     elif tentativa > numero:
         print("Muito alto! Tente novamente.")
     numerotentativa = numerotentativa + 1
-    tentativa = input("Advinhe o número entre 1 e 10: ")
+    tentativa = input("Advinhe o número inteiro entre 1 e 10: ")
     tentativa = int(tentativa)
 
 print("Parabéns", nome, "! Você adivinhou o número:", numero, "em", numerotentativa, "tentativas.")
