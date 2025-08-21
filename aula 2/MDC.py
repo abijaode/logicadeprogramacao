@@ -1,10 +1,11 @@
+#algoritmo para calcular o MDC (Máximo Divisor Comum) de dois números inteiros
+#usando o teorema de Euclides
+
 primeiro_numero = input("Digite o primeiro número inteiro: ")
 primeiro_numero = int(primeiro_numero)
 
 segundo_numero = input("Digite o segundo número inteiro: ")
 segundo_numero = int(segundo_numero)
-
-#print(primeiro_numero + segundo_numero)
 
 while not primeiro_numero == segundo_numero:
     if primeiro_numero > segundo_numero:
