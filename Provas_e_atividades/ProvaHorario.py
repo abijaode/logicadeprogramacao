@@ -1,5 +1,3 @@
-#hora = 15
-#extra = 22,5
 tempo = input("Digite o tempo em horas trabalhadas na semana: ")
 tempo = int(tempo)
 

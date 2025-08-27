@@ -23,9 +23,9 @@ while novamente == "s":
 
     print("Parabéns", nome, "! Você adivinhou o número:", numero, "em", numerotentativa, "tentativas.")
 
-    # Atualizar recorde
     if recorde == 0 or numerotentativa < recorde:
         recorde = numerotentativa
+   
 
     print("Seu recorde é de", recorde, "tentativas.")
 
