@@ -5,12 +5,12 @@ recorde = 0  # recorde começa fora do loop
 novamente = "s"
 while novamente == "s":
 
-    numero = random.randint(1, 10)
+    numero = random.randint(1, 100)
 
     nome = input("Digite seu nome: ")
     print("Olá,", nome, "! Vamos jogar um jogo de adivinhação.")
 
-    tentativa = int(input("Advinhe o número inteiro entre 1 e 10: "))
+    tentativa = int(input("Advinhe o número inteiro entre 1 e 100: "))
     numerotentativa = 1
 
     while tentativa != numero:
@@ -19,7 +19,7 @@ while novamente == "s":
         else: 
             print("Muito alto! Tente novamente.")
         numerotentativa += 1
-        tentativa = int(input("Advinhe o número inteiro entre 1 e 10: "))
+        tentativa = int(input("Advinhe o número inteiro entre 1 e 100: "))
 
     print("Parabéns", nome, "! Você adivinhou o número:", numero, "em", numerotentativa, "tentativas.")
 
