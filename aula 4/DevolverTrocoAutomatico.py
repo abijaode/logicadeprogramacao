@@ -9,7 +9,9 @@ for item in notasmoedas:
     quantidadeitens = 0
     while item <= troco:
         quantidadeitens += 1
-        diferença -= item
+        troco -= item
+    if quantidadeitens > 0:
+        print(f"{quantidadeitens} notas de {item} reais.")
 
 
     
