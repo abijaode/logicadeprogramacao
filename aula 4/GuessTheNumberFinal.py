@@ -1,6 +1,6 @@
 import random
 
-recorde = 0  # recorde começa fora do loop
+recorde = 0 
 
 novamente = "s"
 while novamente == "s":
@@ -12,12 +12,18 @@ while novamente == "s":
 
     tentativa = int(input("Advinhe o número inteiro entre 1 e 100: "))
     numerotentativa = 1
+    tentativaspassadas = []
 
     while tentativa != numero:
-        if tentativa < numero:
-            print("Muito baixo! Tente novamente.")
+        
+        if tentativa in tentativaspassadas:
+            print("Você já tentou esse número. Tente um diferente.")
         else: 
-            print("Muito alto! Tente novamente.")
+            tentativaspassadas.append(tentativa)
+            if tentativa < numero:
+                print("Muito baixo! Tente novamente.")
+            else: 
+                print("Muito alto! Tente novamente.")
         numerotentativa += 1
         tentativa = int(input("Advinhe o número inteiro entre 1 e 100: "))
 
@@ -28,7 +34,8 @@ while novamente == "s":
    
 
     print("Seu recorde é de", recorde, "tentativas.")
-
+    print("Você tentou os números:", tentativaspassadas)
     novamente = input("Gostaria de jogar novamente? (s/n): ")
 
 print("Obrigado por jogar!")
+

@@ -3,9 +3,6 @@ nome = input("Digite seu nome: ")
 tempo = input("Digite o tempo em meses que permaneceu na empresa: ")
 tempo = int(tempo)
 
-#fgts = input("Digite o valor do seu FGTS: ")
-#fgts = float(fgts)
-
 if tempo > 12:
     fgts = input("Digite o valor do seu FGTS: ")
     fgts = float(fgts)
